@@ -1,3 +1,6 @@
+let textarea
+let inputNumero
+
 // Função para verificar e definir o estado da checkbox
 function verificarEstadoCheckbox(idEl) {
     // Obtemos o estado salvo no localStorage
@@ -122,7 +125,7 @@ function salvarNoLocalStorage(campo) {
     // Salva o texto diretamente no localStorage
     localStorage.setItem('dados_' + campo, texto);
 
-    alert('Texto salvo no localStorage!');
+    // alert('Texto salvo no localStorage!');
 }
 
 // Carrega os dados do localStorage ao carregar a página (opcional)
@@ -180,22 +183,133 @@ window.onload = function () {
     if (textoSalvoBackstory) {
         document.getElementById('backstory').value = textoSalvoBackstory;
     }
-};
 
-const textarea = document.getElementById('story');
+
+    const textoSalvoNumeroInput = localStorage.getItem('dados_numeroinput');
+    if (textoSalvoNumeroInput) {
+        document.getElementById('numeroinput').value = textoSalvoNumeroInput;
+    }
+
+    const textoSalvoNumero = localStorage.getItem('dados_numero');
+    if (textoSalvoNumero) {
+        document.getElementById('numero').value = textoSalvoNumero;
+    }
+
+    const textoSalvoNumber = localStorage.getItem('dados_number');
+    if (textoSalvoNumber) {
+        document.getElementById('number').value = textoSalvoNumber;
+    }
+
+    const textoSalvoValor = localStorage.getItem('dados_valor');
+    if (textoSalvoValor) {
+        document.getElementById('valor').value = textoSalvoValor;
+    }
+
+    const textoSalvoValue = localStorage.getItem('dados_value');
+    if (textoSalvoValue) {
+        document.getElementById('value').value = textoSalvoValue;
+    }
+
+    const textoSalvoUm = localStorage.getItem('dados_um');
+    if (textoSalvoUm) {
+        document.getElementById('um').value = textoSalvoUm;
+    }
+
+    const textoSalvoDois = localStorage.getItem('dados_dois');
+    if (textoSalvoDois) {
+        document.getElementById('dois').value = textoSalvoDois;
+    }
+
+    const textoSalvoTres = localStorage.getItem('dados_tres');
+    if (textoSalvoTres) {
+        document.getElementById('tres').value = textoSalvoTres;
+    }
+
+    const textoSalvoQuatro = localStorage.getItem('dados_quatro');
+    if (textoSalvoQuatro) {
+        document.getElementById('quatro').value = textoSalvoQuatro;
+    }
+
+    const textoSalvoCinco = localStorage.getItem('dados_cinco');
+    if (textoSalvoCinco) {
+        document.getElementById('cinco').value = textoSalvoCinco;
+    }
+
+    const textoSalvoSeis = localStorage.getItem('dados_seis');
+    if (textoSalvoSeis) {
+        document.getElementById('seis').value = textoSalvoSeis;
+    }
+
+    const textoSalvoSete = localStorage.getItem('dados_sete');
+    if (textoSalvoSete) {
+        document.getElementById('sete').value = textoSalvoSete;
+    }
+
+    const textoSalvoOito = localStorage.getItem('dados_oito');
+    if (textoSalvoOito) {
+        document.getElementById('oito').value = textoSalvoOito;
+    }
+
+    const textoSalvoNove = localStorage.getItem('dados_nove');
+    if (textoSalvoNove) {
+        document.getElementById('nove').value = textoSalvoNove;
+    }
+
+    const textoSalvoDez = localStorage.getItem('dados_dez');
+    if (textoSalvoDez) {
+        document.getElementById('dez').value = textoSalvoDez;
+    }
+
+    const textoSalvoOnze = localStorage.getItem('dados_onze');
+    if (textoSalvoOnze) {
+        document.getElementById('onze').value = textoSalvoOnze;
+    }
+
+    const textoSalvoDoze = localStorage.getItem('dados_doze');
+    if (textoSalvoDoze) {
+        document.getElementById('doze').value = textoSalvoDoze;
+    }
+
+    const textoSalvoTreze = localStorage.getItem('dados_treze');
+    if (textoSalvoTreze) {
+        document.getElementById('treze').value = textoSalvoTreze;
+    }
+
+    const textoSalvoQuatorze = localStorage.getItem('dados_quatorze');
+    if (textoSalvoQuatorze) {
+        document.getElementById('quatorze').value = textoSalvoQuatorze;
+    }
+
+    const textoSalvoQuinze = localStorage.getItem('dados_quinze');
+    if (textoSalvoQuinze) {
+        document.getElementById('quinze').value = textoSalvoQuinze;
+    }
+
+    const textoSalvoDezesseis = localStorage.getItem('dados_dezesseis');
+    if (textoSalvoDezesseis) {
+        document.getElementById('dezesseis').value = textoSalvoDezesseis;
+    }
+}
+
 
 // Carrega o tamanho da textarea do localStorage ao carregar a página
 const alturaSalva = localStorage.getItem('alturaTextarea');
 const larguraSalva = localStorage.getItem('larguraTextarea');
 
 if (alturaSalva && larguraSalva) {
+    const textarea = document.getElementById('story');
     textarea.style.height = alturaSalva + 'px';
     textarea.style.width = larguraSalva + 'px';
 }
 
-// Adiciona um ouvinte de evento para detectar alterações no tamanho da textarea
-textarea.addEventListener('mouseup', function () {
-    // Salva o novo tamanho no localStorage
-    localStorage.setItem('alturaTextarea', textarea.scrollHeight);
-    localStorage.setItem('larguraTextarea', textarea.scrollWidth);
-});
+function adicionarNumero(idEl) {
+    const inputNumero = document.getElementById(idEl);
+    inputNumero.value = parseInt(inputNumero.value) + 1;
+    salvarNoLocalStorage(idEl);
+}
+
+function subtrairNumero(idEl) {
+    const inputNumero = document.getElementById(idEl);
+    inputNumero.value = parseInt(inputNumero.value) - 1;
+    salvarNoLocalStorage(idEl);
+}

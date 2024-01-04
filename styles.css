@@ -99,17 +99,17 @@ td {
   display: none;
 }
 
-.historia{
-font-family: "semi-coder";
-color: rgb(255, 230, 0);
-}
-
-.story{
+.historia {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
 }
 
-.backstory{
+.story {
+  font-family: "semi-coder";
+  color: rgb(255, 230, 0);
+}
+
+.backstory {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
 }

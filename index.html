@@ -302,89 +302,154 @@
         <td>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item13">
-            Acrobacia - Corpo
+            Acrobacia - Corpo <label for="numeroinput"></label>
+            <input type="text" id="numeroinput" value="0" readonly>
+            <button onclick="adicionarNumero('numeroinput')">+</button>
+            <button onclick="subtrairNumero('numeroinput')">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item14">
-            Adestramento - Mente
+            Adestramento - Mente <label for="numeroInput"></label>
+            <input type="text" id="numero" value="0" readonly>
+            <button onclick="adicionarNumero('numero')">+</button>
+            <button onclick="subtrairNumero('numero')">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item15">
-            Assassinar - Corpo
+            Assassinar - Corpo <label for="numeroInput"></label>
+            <input type="text" id="valor" value="0" readonly>
+            <button onclick="adicionarNumero('valor')">+</button>
+            <button onclick="subtrairNumero('valor')">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item16">
-            Atletismo - Corpo
+            Atletismo - Corpo <label for="numeroInput"></label>
+            <input type="text" id="number" value="0" readonly>
+            <button onclick="adicionarNumero('number')">+</button>
+            <button onclick="subtrairNumero('number')">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item17">
             Ciências - Mente
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item18">
-              Destreza - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item19">
-              Estratégia - Mente
-              <div class="checkbox">
-                <input type="checkbox" class="chkbox" id="item20">
-                Furtividade - Aura
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" class="chkbox" id="item21">
-                História - Mente
-              </div>
-              <input type="checkbox" class="chkbox" id="item22">
-              Iniciativa - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item23">
-              Intimidação - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item24">
-              Investigação - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item25">
-              Luta - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item26">
-              Medicina - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item27">
-              Pilotagem - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item28">
-              Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">
-              <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button>
-
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item29">
-              Religião - Mente
-            </div>
-            <input type="checkbox" class="chkbox" id="item30">
-            Sobrevivência - Mente
+            <label for="numeroInput"></label>
+            <input type="text" id="value" value="0" readonly>
+            <button onclick="adicionarNumero('value')">+</button>
+            <button onclick="subtrairNumero('value')">-</button>
           </div>
           <div class="checkbox">
-            <input type="checkbox" class="chkbox" id="item31">
-            Tecnologia - Mente
+            <input type="checkbox" class="chkbox" id="item18">
+            Destreza - Corpo <label for="numeroInput"></label>
+            <input type="text" id="um" value="0" readonly>
+            <button onclick="adicionarNumero('um')">+</button>
+            <button onclick="subtrairNumero('um')">-</button>
           </div>
           <div class="checkbox">
-            <input type="checkbox" class="chkbox" id="item32">
-            Treinamento - Corpo
+            <input type="checkbox" class="chkbox" id="item19">
+            Estratégia - Mente <label for="numeroInput"></label>
+            <input type="text" id="dois" value="0" readonly>
+            <button onclick="adicionarNumero('dois')">+</button>
+            <button onclick="subtrairNumero('dois')">-</button>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item20">
+              Furtividade - Aura <label for="numeroInput"></label>
+              <input type="text" id="tres" value="0" readonly>
+              <button onclick="adicionarNumero('tres')">+</button>
+              <button onclick="subtrairNumero('tres')">-</button>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item21">
+              História - Mente <label for="numeroInput"></label>:</label>
+              <input type="text" id="quatro" value="0" readonly>
+              <button onclick="adicionarNumero('quatro')">+</button>
+              <button onclick="subtrairNumero('quatro')">-</button>
+            </div>
+            <input type="checkbox" class="chkbox" id="item22">
+            Iniciativa - Corpo <label for="numeroInput"></label>
+            <input type="text" id="cinco" value="0" readonly>
+            <button onclick="adicionarNumero('cinco')">+</button>
+            <button onclick="subtrairNumero('cinco')">-</button>
           </div>
           <div class="checkbox">
-            <input type="checkbox" class="chkbox" id="item33">
-            Vontade - Mente/Aura
+            <input type="checkbox" class="chkbox" id="item23">
+            Intimidação - Mente <label for="numeroInput"></label>
+            <input type="text" id="seis" value="0" readonly>
+            <button onclick="adicionarNumero('seis')">+</button>
+            <button onclick="subtrairNumero('seis')">-</button>
           </div>
-      <tr>
-        </td>
-      </tr>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item24">
+            Investigação - Mente <label for="numeroInput"></label>
+            <input type="text" id="sete" value="0" readonly>
+            <button onclick="adicionarNumero('sete')">+</button>
+            <button onclick="subtrairNumero('sete')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item25">
+            Luta - Corpo <label for="numeroInput"></label>
+            <input type="text" id="oito" value="0" readonly>
+            <button onclick="adicionarNumero('oito')">+</button>
+            <button onclick="subtrairNumero('oito')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item26">
+            Medicina - Mente <label for="numeroInput"></label>
+            <input type="text" id="nove" value="0" readonly>
+            <button onclick="adicionarNumero('nove')">+</button>
+            <button onclick="subtrairNumero('nove')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item27">
+            Pilotagem - Corpo <label for="numeroInput"></label>
+            <input type="text" id="dez" value="0" readonly>
+            <button onclick="adicionarNumero('dez')">+</button>
+            <button onclick="subtrairNumero('dez')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item28">
+            Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">
+            <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button> <label
+              for="numeroInput"></label>
+            <input type="text" id="onze" value="0" readonly>
+            <button onclick="adicionarNumero('onze')">+</button>
+            <button onclick="subtrairNumero('onze')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item29">
+            Religião - Mente <label for="numeroInput"></label>
+            <input type="text" id="doze" value="0" readonly>
+            <button onclick="adicionarNumero('doze')">+</button>
+            <button onclick="subtrairNumero('doze')">-</button>
+          </div>
+          <input type="checkbox" class="chkbox" id="item30">
+          Sobrevivência - Mente <label for="numeroInput"></label>
+          <input type="text" id="treze" value="0" readonly>
+          <button onclick="adicionarNumero('treze')">+</button>
+          <button onclick="subtrairNumero('treze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item31">
+    Tecnologia - Mente <label for="numeroInput"></label>
+    <input type="text" id="quatorze" value="0" readonly>
+    <button onclick="adicionarNumero('quatorze')">+</button>
+    <button onclick="subtrairNumero('quatorze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item32">
+    Treinamento - Corpo <label for="numeroInput"></label>
+    <input type="text" id="quinze" value="0" readonly>
+    <button onclick="adicionarNumero('quinze')">+</button>
+    <button onclick="subtrairNumero('quinze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item33">
+    Vontade - Mente/Aura <label for="numeroInput"></label>
+    <input type="text" id="dezesseis" value="0" readonly>
+    <button onclick="adicionarNumero('dezesseis')">+</button>
+    <button onclick="subtrairNumero('dezesseis')">-</button>
+  </div>
+  <tr>
+    </td>
+  </tr>
   </div>
   </td>
   </tr>
