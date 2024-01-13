@@ -66,6 +66,33 @@ thead {
   font-family: 'semi-coder';
 }
 
+.r {
+  background-color: rgb(26, 110, 0);
+  color: black;
+  font-family: 'semi-coder';
+}
+
+.v {
+  background-color: rgb(255, 0, 0);
+  size: 5px;
+}
+
+.j {
+  color: rgb(255, 0, 76);
+}
+
+.k {
+  color: rgb(255, 136, 0);
+}
+
+.m {
+  color: rgb(0, 255, 98);
+}
+
+.f {
+  color: rgb(255, 0, 76);
+}
+
 .white {
   color: white;
   font-family: 'semi-coder';

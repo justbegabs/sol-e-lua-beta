@@ -60,7 +60,7 @@
   <h3>Dica: fale com seu mestre, ele irá definir isso. ( Na sessão, não se preocupe com isso agora ). </h3>
   <label for="historia" class="historia">Seu Teste:</label>
   <textarea id="historia" name="historia" rows="5" cols="40"></textarea>
-  <button type="button" onclick="salvarNoLocalStorage('historia')">Salvar</button>
+  <button type="button" class="r" onclick="salvarNoLocalStorage('historia')">Salvar</button>
   <hr>
   <h2>Agora que você é alguém, apresente-se. Antes você não era importante o suficiente para isso, afinal, se não
     passasse no mini-teste, pra que eu me incomodaria de aprender seu nome e história? Você não faria parte do mundo
@@ -70,21 +70,21 @@
       <td class="a">Nome:</td>
       <td>
         <input type="text" id="nome" name="nome" class="y" size="41">
-        <button type="button" onclick="salvarNoLocalStorage('nome')">Salvar</button>
+        <button type="button" class="r" onclick="salvarNoLocalStorage('nome')">Salvar</button>
       </td>
     </tr>
     <tr>
       <td class="a">Sobrenome:</td>
       <td>
         <input type="text" id="sobrenome" name="sobrenome" class="y" size="41">
-        <button type="button" onclick="salvarNoLocalStorage('sobrenome')">Salvar</button>
+        <button type="button" class="r" onclick="salvarNoLocalStorage('sobrenome')">Salvar</button>
       </td>
     </tr>
     <tr>
       <td class="a">Idade:</td>
       <td>
         <input type="text" id="idade" name="idade" class="y" size="41">
-        <button type="button" onclick="salvarNoLocalStorage('idade')">Salvar</button>
+        <button type="button" class="r" onclick="salvarNoLocalStorage('idade')">Salvar</button>
       </td>
     </tr>
 
@@ -92,7 +92,7 @@
       <td label for="story" class="story">Sua História: </label></td>
       <td>
         <textarea id="story" name="story" rows="5" cols="40"></textarea>
-        <button type="button" onclick="salvarNoLocalStorage('story')">Salvar</button>
+        <button type="button" class="r" onclick="salvarNoLocalStorage('story')">Salvar</button>
       </td>
     </tr>
   </table>
@@ -277,8 +277,8 @@
       </div>
     </div>
     <h4>Para coisas menos importantes então. Sua ficha e habilidades. Você vai pegar os valores descritos em sua classe
-      para Vida,
-      Aura e Potencial. Também vai pegar o valor determinado na classe para as perícias ( contando os níveis) e girar
+      para Vida, Aura e Potencial. Também vai pegar o valor determinado na classe para as perícias ( contando os níveis
+      ) e girar
       1d6+2 para determinar o valor de cada um da quantidade de perícias específicada ( ex: +5 nas perícias treinadas X
       e Y de sua classe + 5 perícias+mente - quantidade total de perícias que você poderá escolher - e pelo nível 1, +9
       em 2 perícias de escolha sua, totalizando 9+mente perícias onde, para cada uma, deverá ser rolado 1d6+2 para
@@ -288,21 +288,21 @@
         <td class="a">Vida:</td>
         <td>
           <input type="text" id="vida" name="vida" class="y" size="41">
-          <button type="button" onclick="salvarNoLocalStorage('vida')">Salvar</button>
+          <button type="button" class="r" onclick="salvarNoLocalStorage('vida')">Salvar</button>
         </td>
       </tr>
       <tr>
         <td class="a">Aura:</td>
         <td>
           <input type="text" id="aura" name="aura" class="y" size="41">
-          <button type="button" onclick="salvarNoLocalStorage('aura')">Salvar</button>
+          <button type="button" class="r" onclick="salvarNoLocalStorage('aura')">Salvar</button>
         </td>
       </tr>
       <tr>
         <td class="a">Potencial:</td>
         <td>
           <input type="text" id="potencial" name="potencial" class="y" size="41">
-          <button type="button" onclick="salvarNoLocalStorage('potencial')">Salvar</button>
+          <button type="button" class="r" onclick="salvarNoLocalStorage('potencial')">Salvar</button>
         </td>
       </tr>
     </table>
@@ -310,10 +310,10 @@
     <table>
       <thead class="central">
         <tr>
-          <th colspan="2">Corpo:<label for="numeroInput"></label>
-            <input type="text" id="body" value="0" readonly>
-            <button onclick="adicionarNumero('body')">+</button>
-            <button onclick="subtrairNumero('body')">-</button>
+          <th colspan="2" class="j" style="font-size: x-large;">Corpo:<label for="numeroInput"></label>
+            <input type="text" class="y" id="body" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('body')" class="r">+</button>
+            <button onclick="subtrairNumero('body')" class="v">-</button>
           </th>
         </tr>
       </thead>
@@ -322,48 +322,48 @@
           <td>&nbsp</td>
         </tr>
         <tr>
-          <td class="a">Força:</td>
+          <td class="j">Força:</td>
           <td>Dano físico, carregar algo, empurrar, etc.</td>
           <td><label for="numeroinput"></label>
-            <input type="text" id="força" value="0" readonly>
-            <button onclick="adicionarNumero('força')">+</button>
-            <button onclick="subtrairNumero('força')">-</button>
+            <input type="text" class="y" id="força" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('força')" class="r">+</button>
+            <button onclick="subtrairNumero('força')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Agilidade:</td>
+          <td class="j">Agilidade:</td>
           <td>Velocidade, pegar algo em ação livre, etc.</td>
           <td><label for="numeroinput"></label>
-            <input type="text" id="agilidade" value="0" readonly>
-            <button onclick="adicionarNumero('agilidade')">+</button>
-            <button onclick="subtrairNumero('agilidade')">-</button>
+            <input type="text" class="y" id="agilidade" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('agilidade')" class="r">+</button>
+            <button onclick="subtrairNumero('agilidade')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Resistência:</td>
+          <td class="j">Resistência:</td>
           <td>Sua durabilidade, defesa, contra venenos, aguentar e não ficar inconsciente, etc.</td>
           <td><label for="numeroinput"></label>
-            <input type="text" id="resistencia" value="0" readonly>
-            <button onclick="adicionarNumero('resistencia')">+</button>
-            <button onclick="subtrairNumero('resistencia')">-</button>
+            <input type="text" class="y" id="resistencia" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('resistencia')" class="r">+</button>
+            <button onclick="subtrairNumero('resistencia')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Readaptar:</td>
+          <td class="j">Readaptar:</td>
           <td>Consegue mudar seu ataque quase instantaneamente, DT readaptar (10 +readaptar).</td>
           <td><label for="numeroinput"></label>
-            <input type="text" id="readaptar" value="0" readonly>
-            <button onclick="adicionarNumero('readaptar')">+</button>
-            <button onclick="subtrairNumero('readaptar')">-</button>
+            <input type="text" class="y" id="readaptar" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('readaptar')" class="r">+</button>
+            <button onclick="subtrairNumero('readaptar')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Finta:</td>
+          <td class="j">Finta:</td>
           <td>É o termo que surge no desporto para designar um movimento para enganar o adversário.</td>
           <td><label for="numeroinput"></label>
-            <input type="text" id="finta" value="0" readonly>
-            <button onclick="adicionarNumero('finta')">+</button>
-            <button onclick="subtrairNumero('finta')">-</button>
+            <input type="text" class="y" id="finta" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('finta')" class="r">+</button>
+            <button onclick="subtrairNumero('finta')" class="v">-</button>
           </td>
           </td>
         </tr>
@@ -373,10 +373,10 @@
     <table>
       <thead class="central">
         <tr>
-          <th colspan="2">Sentidos/Mente:<label for="numeroInput"></label>
-            <input type="text" id="sentidos" value="0" readonly>
-            <button onclick="adicionarNumero('sentidos')">+</button>
-            <button onclick="subtrairNumero('sentidos')">-</button>
+          <th colspan="2" class="k" style="font-size: x-large;">Sentidos/Mente:<label for="numeroInput"></label>
+            <input type="text" class="y" id="sentidos" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('sentidos')" class="r">+</button>
+            <button onclick="subtrairNumero('sentidos')" class="v">-</button>
           </th>
         </tr>
       </thead>
@@ -385,48 +385,48 @@
           <td>&nbsp</td>
         </tr>
         <tr>
-          <td class="a">Intuição</td>
+          <td class="k">Intuição</td>
           <td>Dedução, lembrar algo, sentir se esta sendo enganado.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="intuicao" value="0" readonly>
-            <button onclick="adicionarNumero('intuicao')">+</button>
-            <button onclick="subtrairNumero('intuicao')">-</button>
+            <input type="text" class="y" id="intuicao" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('intuicao')" class="r">+</button>
+            <button onclick="subtrairNumero('intuicao')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Percepção:</td>
+          <td class="k">Percepção:</td>
           <td>Ouvir, ver, sentir etc.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="percepcao" value="0" readonly>
-            <button onclick="adicionarNumero('percepcao')">+</button>
-            <button onclick="subtrairNumero('percepcao')">-</button>
+            <input type="text" class="y" id="percepcao" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('percepcao')" class="r">+</button>
+            <button onclick="subtrairNumero('percepcao')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Instintos:</td>
+          <td class="k">Instintos:</td>
           <td>Todos seus sentidos.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="instintos" value="0" readonly>
-            <button onclick="adicionarNumero('instintos')">+</button>
-            <button onclick="subtrairNumero('instintos')">-</button>
+            <input type="text" class="y" id="instintos" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('instintos')" class="r">+</button>
+            <button onclick="subtrairNumero('instintos')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Linguagem:</td>
+          <td class="k">Linguagem:</td>
           <td>Sua diplomacia, blefe, enganar, etc.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="linguagem" value="0" readonly>
-            <button onclick="adicionarNumero('linguagem')">+</button>
-            <button onclick="subtrairNumero('linguagem')">-</button>
+            <input type="text" class="y" id="linguagem" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('linguagem')" class="r">+</button>
+            <button onclick="subtrairNumero('linguagem')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Análise:</td>
+          <td class="k">Análise:</td>
           <td>Análise de combate ou normal.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="analise" value="0" readonly>
-            <button onclick="adicionarNumero('analise')">+</button>
-            <button onclick="subtrairNumero('analise')">-</button>
+            <input type="text" class="y" id="analise" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('analise')" class="r">+</button>
+            <button onclick="subtrairNumero('analise')" class="v">-</button>
           </td>
         </tr>
     </table>
@@ -434,10 +434,10 @@
     <table>
       <thead class="central">
         <tr>
-          <th colspan="2">Nen/Aura:<label for="numeroInput"></label>
-            <input type="text" id="nen" value="0" readonly>
-            <button onclick="adicionarNumero('nen')">+</button>
-            <button onclick="subtrairNumero('nen')">-</button>
+          <th colspan="2" class="m" style="font-size: x-large;">Nen/Aura:<label for="numeroInput"></label>
+            <input type="text" class="y" id="nen" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('nen')" class="r">+</button>
+            <button onclick="subtrairNumero('nen')" class="v">-</button>
           </th>
         </tr>
       </thead>
@@ -446,200 +446,202 @@
           <td>&nbsp</td>
         </tr>
         <tr>
-          <td class="a">Aumento de Aura</td>
+          <td class="m">Aumento de Aura</td>
           <td>Fortifica os ataques e aumenta a velocidade, também melhora os Hatsus, etc.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="auau" value="0" readonly>
-            <button onclick="adicionarNumero('auau')">+</button>
-            <button onclick="subtrairNumero('auau')">-</button>
+            <input type="text" class="y" id="auau" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('auau')" class="r">+</button>
+            <button onclick="subtrairNumero('auau')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Hatsus</td>
+          <td class="m">Hatsus</td>
           <td>sua habilidade única de Aura.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="hatsus" value="0" readonly>
-            <button onclick="adicionarNumero('hatsus')">+</button>
-            <button onclick="subtrairNumero('hatsus')">-</button>
+            <input type="text" class="y" id="hatsus" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('hatsus')" class="r">+</button>
+            <button onclick="subtrairNumero('hatsus')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Manipulação de Aura</td>
+          <td class="m">Manipulação de Aura</td>
           <td>Para focar sua Aura em umas partes de seu corpo, ou até mesmo objetos.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="manau" value="0" readonly>
-            <button onclick="adicionarNumero('manau')">+</button>
-            <button onclick="subtrairNumero('manau')">-</button>
+            <input type="text" class="y" id="manau" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('manau')" class="r">+</button>
+            <button onclick="subtrairNumero('manau')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Ocultar Aura</td>
+          <td class="m">Ocultar Aura</td>
           <td>Sua maestria em ocultar sua aura, para que outros usuários de Nen não consigam te ver.</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="ocau" value="0" readonly>
-            <button onclick="adicionarNumero('ocau')">+</button>
-            <button onclick="subtrairNumero('ocau')">-</button>
+            <input type="text" class="y" id="ocau" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('ocau')" class="r">+</button>
+            <button onclick="subtrairNumero('ocau')" class="v">-</button>
           </td>
         </tr>
         <tr>
-          <td class="a">Sede de Sangue</td>
+          <td class="m">Sede de Sangue</td>
           <td>Usa Ren contra alvo e obriga ele a sair de perto. Caso ele não esteja usando Ten. DT (10 + Sede de
             sangue).</td>
           <td><label for="numeroInput"></label>
-            <input type="text" id="sesan" value="0" readonly>
-            <button onclick="adicionarNumero('sesan')">+</button>
-            <button onclick="subtrairNumero('sesan')">-</button>
+            <input type="text" class="y" class="r" id="sesan" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('sesan')" class="r">+</button>
+            <button onclick="subtrairNumero('sesan')" class="v">-</button>
           </td>
         </tr>
-
+        <tr>
+          <td>&nbsp</td>
+        </tr>
         <td class="a">Perícias:</td>
         <td>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item13">
             Acrobacia - Corpo <label for="numeroinput"></label>
-            <input type="text" id="numeroinput" value="0" readonly>
-            <button onclick="adicionarNumero('numeroinput')">+</button>
-            <button onclick="subtrairNumero('numeroinput')">-</button>
+            <input type="text" class="y" id="numeroinput" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('numeroinput')" class="r">+</button>
+            <button onclick="subtrairNumero('numeroinput')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item14">
             Adestramento - Mente <label for="numeroInput"></label>
-            <input type="text" id="numero" value="0" readonly>
-            <button onclick="adicionarNumero('numero')">+</button>
-            <button onclick="subtrairNumero('numero')">-</button>
+            <input type="text" class="y" id="numero" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('numero')" class="r">+</button>
+            <button onclick="subtrairNumero('numero')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item15">
             Assassinar - Corpo <label for="numeroInput"></label>
-            <input type="text" id="valor" value="0" readonly>
-            <button onclick="adicionarNumero('valor')">+</button>
-            <button onclick="subtrairNumero('valor')">-</button>
+            <input type="text" class="y" id="valor" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('valor')" class="r">+</button>
+            <button onclick="subtrairNumero('valor')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item16">
             Atletismo - Corpo <label for="numeroInput"></label>
-            <input type="text" id="number" value="0" readonly>
-            <button onclick="adicionarNumero('number')">+</button>
-            <button onclick="subtrairNumero('number')">-</button>
+            <input type="text" class="y" id="number" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('number')" class="r">+</button>
+            <button onclick="subtrairNumero('number')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item17">
             Ciências - Mente
             <label for="numeroInput"></label>
-            <input type="text" id="value" value="0" readonly>
-            <button onclick="adicionarNumero('value')">+</button>
-            <button onclick="subtrairNumero('value')">-</button>
+            <input type="text" class="y" id="value" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('value')" class="r">+</button>
+            <button onclick="subtrairNumero('value')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item18">
             Destreza - Corpo <label for="numeroInput"></label>
-            <input type="text" id="um" value="0" readonly>
-            <button onclick="adicionarNumero('um')">+</button>
-            <button onclick="subtrairNumero('um')">-</button>
+            <input type="text" class="y" id="um" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('um')" class="r">+</button>
+            <button onclick="subtrairNumero('um')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item19">
             Estratégia - Mente <label for="numeroInput"></label>
-            <input type="text" id="dois" value="0" readonly>
-            <button onclick="adicionarNumero('dois')">+</button>
-            <button onclick="subtrairNumero('dois')">-</button>
+            <input type="text" class="y" id="dois" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('dois')" class="r">+</button>
+            <button onclick="subtrairNumero('dois')" class="v">-</button>
             <div class="checkbox">
               <input type="checkbox" class="chkbox" id="item20">
               Furtividade - Aura <label for="numeroInput"></label>
-              <input type="text" id="tres" value="0" readonly>
-              <button onclick="adicionarNumero('tres')">+</button>
-              <button onclick="subtrairNumero('tres')">-</button>
+              <input type="text" class="y" id="tres" size="2" value="0" readonly>
+              <button onclick="adicionarNumero('tres')" class="r">+</button>
+              <button onclick="subtrairNumero('tres')" class="v">-</button>
             </div>
             <div class="checkbox">
               <input type="checkbox" class="chkbox" id="item21">
               História - Mente <label for="numeroInput"></label>:</label>
-              <input type="text" id="quatro" value="0" readonly>
-              <button onclick="adicionarNumero('quatro')">+</button>
-              <button onclick="subtrairNumero('quatro')">-</button>
+              <input type="text" class="y" id="quatro" size="2" value="0" readonly>
+              <button onclick="adicionarNumero('quatro')" class="r">+</button>
+              <button onclick="subtrairNumero('quatro')" class="v">-</button>
             </div>
             <input type="checkbox" class="chkbox" id="item22">
             Iniciativa - Corpo <label for="numeroInput"></label>
-            <input type="text" id="cinco" value="0" readonly>
-            <button onclick="adicionarNumero('cinco')">+</button>
-            <button onclick="subtrairNumero('cinco')">-</button>
+            <input type="text" class="y" id="cinco" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('cinco')" class="r">+</button>
+            <button onclick="subtrairNumero('cinco')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item23">
             Intimidação - Mente <label for="numeroInput"></label>
-            <input type="text" id="seis" value="0" readonly>
-            <button onclick="adicionarNumero('seis')">+</button>
-            <button onclick="subtrairNumero('seis')">-</button>
+            <input type="text" class="y" id="seis" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('seis')" class="r">+</button>
+            <button onclick="subtrairNumero('seis')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item24">
             Investigação - Mente <label for="numeroInput"></label>
-            <input type="text" id="sete" value="0" readonly>
-            <button onclick="adicionarNumero('sete')">+</button>
-            <button onclick="subtrairNumero('sete')">-</button>
+            <input type="text" class="y" id="sete" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('sete')" class="r">+</button>
+            <button onclick="subtrairNumero('sete')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item25">
             Luta - Corpo <label for="numeroInput"></label>
-            <input type="text" id="oito" value="0" readonly>
-            <button onclick="adicionarNumero('oito')">+</button>
-            <button onclick="subtrairNumero('oito')">-</button>
+            <input type="text" class="y" id="oito" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('oito')" class="r">+</button>
+            <button onclick="subtrairNumero('oito')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item26">
             Medicina - Mente <label for="numeroInput"></label>
-            <input type="text" id="nove" value="0" readonly>
-            <button onclick="adicionarNumero('nove')">+</button>
-            <button onclick="subtrairNumero('nove')">-</button>
+            <input type="text" class="y" id="nove" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('nove')" class="r">+</button>
+            <button onclick="subtrairNumero('nove')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item27">
             Pilotagem - Corpo <label for="numeroInput"></label>
-            <input type="text" id="dez" value="0" readonly>
-            <button onclick="adicionarNumero('dez')">+</button>
-            <button onclick="subtrairNumero('dez')">-</button>
+            <input type="text" class="y" id="dez" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('dez')" class="r">+</button>
+            <button onclick="subtrairNumero('dez')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item28">
             Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">
-            <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button> <label
+            <button type="button" class="r" onclick="salvarNoLocalStorage('profissao')">Salvar</button> <label
               for="numeroInput"></label>
-            <input type="text" id="onze" value="0" readonly>
-            <button onclick="adicionarNumero('onze')">+</button>
-            <button onclick="subtrairNumero('onze')">-</button>
+            <input type="text" class="y" id="onze" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('onze')" class="r">+</button>
+            <button onclick="subtrairNumero('onze')" class="v">-</button>
           </div>
           <div class="checkbox">
             <input type="checkbox" class="chkbox" id="item29">
             Religião - Mente <label for="numeroInput"></label>
-            <input type="text" id="doze" value="0" readonly>
-            <button onclick="adicionarNumero('doze')">+</button>
-            <button onclick="subtrairNumero('doze')">-</button>
+            <input type="text" class="y" id="doze" size="2" value="0" readonly>
+            <button onclick="adicionarNumero('doze')" class="r">+</button>
+            <button onclick="subtrairNumero('doze')" class="v">-</button>
           </div>
           <input type="checkbox" class="chkbox" id="item30">
           Sobrevivência - Mente <label for="numeroInput"></label>
-          <input type="text" id="treze" value="0" readonly>
-          <button onclick="adicionarNumero('treze')">+</button>
-          <button onclick="subtrairNumero('treze')">-</button>
+          <input type="text" class="y" id="treze" size="2" value="0" readonly>
+          <button onclick="adicionarNumero('treze')" class="r">+</button>
+          <button onclick="subtrairNumero('treze')" class="v">-</button>
   </div>
   <div class="checkbox">
     <input type="checkbox" class="chkbox" id="item31">
     Tecnologia - Mente <label for="numeroInput"></label>
-    <input type="text" id="quatorze" value="0" readonly>
-    <button onclick="adicionarNumero('quatorze')">+</button>
-    <button onclick="subtrairNumero('quatorze')">-</button>
+    <input type="text" class="y" id="quatorze" size="2" value="0" readonly>
+    <button onclick="adicionarNumero('quatorze')" class="r">+</button>
+    <button onclick="subtrairNumero('quatorze')" class="v">-</button>
   </div>
   <div class="checkbox">
     <input type="checkbox" class="chkbox" id="item32">
     Treinamento - Corpo <label for="numeroInput"></label>
-    <input type="text" id="quinze" value="0" readonly>
-    <button onclick="adicionarNumero('quinze')">+</button>
-    <button onclick="subtrairNumero('quinze')">-</button>
+    <input type="text" class="y" id="quinze" size="2" value="0" readonly>
+    <button onclick="adicionarNumero('quinze')" class="r">+</button>
+    <button onclick="subtrairNumero('quinze')" class="v">-</button>
   </div>
   <div class="checkbox">
     <input type="checkbox" class="chkbox" id="item33">
     Vontade - Mente/Aura <label for="numeroInput"></label>
-    <input type="text" id="dezesseis" value="0" readonly>
-    <button onclick="adicionarNumero('dezesseis')">+</button>
-    <button onclick="subtrairNumero('dezesseis')">-</button>
+    <input type="text" class="y" id="dezesseis" size="2" value="0" readonly>
+    <button onclick="adicionarNumero('dezesseis')" class="r">+</button>
+    <button onclick="subtrairNumero('dezesseis')" class="v">-</button>
   </div>
   <tr>
     </td>
@@ -655,6 +657,6 @@
   <h3>Dica:anote os números</h3>
   <label for="backstory" class="backstory">Sua trajetória:</label>
   <textarea id="backstory" name="backstory" rows="5" cols="40"></textarea>
-  <button type="button" onclick="salvarNoLocalStorage('backstory')">Salvar</button>
+  <button type="button" class="r" onclick="salvarNoLocalStorage('backstory')">Salvar</button>
 
 </html>
