@@ -289,6 +289,87 @@ window.onload = function () {
     if (textoSalvoDezesseis) {
         document.getElementById('dezesseis').value = textoSalvoDezesseis;
     }
+
+    const textoSalvoBody = localStorage.getItem('dados_body');
+    if (textoSalvoBody) {
+        document.getElementById('body').value = textoSalvoBody;
+    }
+
+    const textoSalvoForça = localStorage.getItem('dados_força');
+    if (textoSalvoForça) {
+        document.getElementById('força').value = textoSalvoForça;
+    }
+
+    const textoSalvoAgilidade = localStorage.getItem('dados_agilidade');
+    if (textoSalvoAgilidade) {
+        document.getElementById('agilidade').value = textoSalvoAgilidade;
+    }
+
+    const textoSalvoResistencia = localStorage.getItem('dados_resistencia');
+    if (textoSalvoResistencia) {
+        document.getElementById('resistencia').value = textoSalvoResistencia;
+    }
+
+    const textoSalvoReadaptar = localStorage.getItem('dados_readaptar');
+    if (textoSalvoReadaptar) {
+        document.getElementById('readaptar').value = textoSalvoReadaptar;
+    }
+
+    const textoSalvoFinta = localStorage.getItem('dados_finta');
+    if (textoSalvoFinta) {
+        document.getElementById('finta').value = textoSalvoFinta;
+    }
+
+    const textoSalvoSentidos = localStorage.getItem('dados_sentidos');
+    if (textoSalvoSentidos) {
+        document.getElementById('sentidos').value = textoSalvoSentidos;
+    }
+
+    const textoSalvoIntuicao = localStorage.getItem('dados_intuicao');
+    if (textoSalvoIntuicao) {
+        document.getElementById('intuicao').value = textoSalvoIntuicao;
+    }
+
+    const textoSalvoPercepcao = localStorage.getItem('dados_percepcao');
+    if (textoSalvoPercepcao) {
+        document.getElementById('percepcao').value = textoSalvoPercepcao;
+    }
+
+    const textoSalvoInstintos = localStorage.getItem('dados_instintos');
+    if (textoSalvoInstintos) {
+        document.getElementById('instintos').value = textoSalvoInstintos;
+    }
+
+    const textoSalvoLinguagem = localStorage.getItem('dados_linguagem');
+    if (textoSalvoLinguagem) {
+        document.getElementById('linguagem').value = textoSalvoLinguagem;
+    }
+
+    const textoSalvoAnalise = localStorage.getItem('dados_analise');
+    if (textoSalvoAnalise) {
+        document.getElementById('analise').value = textoSalvoAnalise;
+    }
+
+    const textoSalvoHatsus = localStorage.getItem('dados_hatsus');
+    if (textoSalvoHatsus) {
+        document.getElementById('hatsus').value = textoSalvoHatsus;
+    }
+
+    const textoSalvoManau = localStorage.getItem('dados_manau');
+    if (textoSalvoManau) {
+        document.getElementById('manau').value = textoSalvoManau;
+    }
+
+    const textoSalvoOcau = localStorage.getItem('dados_ocau');
+    if (textoSalvoOcau) {
+        document.getElementById('ocau').value = textoSalvoOcau;
+    }
+
+    const textoSalvoSesan = localStorage.getItem('dados_sesan');
+    if (textoSalvoSesan) {
+        document.getElementById('sesan').value = textoSalvoSesan;
+    }
+
 }
 
 

@@ -45,6 +45,11 @@ td {
   color: white;
 }
 
+thead {
+  text-align: center;
+  margin-left: 40%;
+}
+
 .a {
   font-family: 'semi-coder';
   color: rgb(255, 230, 0);
@@ -112,6 +117,10 @@ td {
 .backstory {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
+}
+
+.central {
+  text-align: center;
 }
 
 textarea#story {
