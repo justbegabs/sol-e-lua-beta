@@ -370,6 +370,11 @@ window.onload = function () {
         document.getElementById('sesan').value = textoSalvoSesan;
     }
 
+    const textoSalvoDezessete = localStorage.getItem('dados_dezessete');
+    if (textoSalvoDezessete) {
+        document.getElementById('dezessete').value = textoSalvoDezessete;
+    }
+
 }
 
 
