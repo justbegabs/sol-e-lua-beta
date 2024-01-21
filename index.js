@@ -350,6 +350,12 @@ window.onload = function () {
         document.getElementById('analise').value = textoSalvoAnalise;
     }
 
+    const textoSalvoNen = localStorage.getItem('dados_nen');
+    if (textoSalvoNen) {
+        document.getElementById('nen').value = textoSalvoNen;
+    }
+
+
     const textoSalvoHatsus = localStorage.getItem('dados_hatsus');
     if (textoSalvoHatsus) {
         document.getElementById('hatsus').value = textoSalvoHatsus;
