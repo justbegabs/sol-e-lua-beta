@@ -355,6 +355,10 @@ window.onload = function () {
         document.getElementById('nen').value = textoSalvoNen;
     }
 
+    const textoSalvoAuau = localStorage.getItem('dados_auau');
+    if (textoSalvoAuau) {
+        document.getElementById('auau').value = textoSalvoAuau;
+    }
 
     const textoSalvoHatsus = localStorage.getItem('dados_hatsus');
     if (textoSalvoHatsus) {
